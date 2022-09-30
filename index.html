@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST Countries API</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2>where your Country in the world?</h2>
+            <button class="btn-toggle" id="toggle">
+            </button>
+        </div>
+    </header>
+  
+    <section>
+        <div class="container">
+            <input 
+            id="search"
+            class="search" 
+            type="text" 
+            placeholder="search for country name"/>
+            
+            <div class="dropdown" id="filter">
+                Filter by Region
+                <i class="fa fa-chevron-down"></i>
+                <ul>
+                    <li>Alls</li>
+                    <li>Africa</li>
+                    <li>America</li>
+                    <li>Asia</li>
+                    <li>Europe</li>
+                    <li>Oceania</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="modal">
+        <div class="container">
+            <button class="btn-close" id="close">
+                <i class="fa fa-xmark"> </i>
+            </button>
+            <img src="" alt="">
+            <div class="modal-body">
+                <!--blog thems data modal body-->
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="container coutries" id="countries">
+            <h2> Countries Loading.......</h2>
+            
+        </div>  
+    </section>
+
+    <section>
+        <div class="container">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
